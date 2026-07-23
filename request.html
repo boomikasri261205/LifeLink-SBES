@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<title>Emergency Blood Request</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-heart-pulse"></i> LifeLink
+    </div>
+
+    <nav>
+
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+
+        <a href="request.html" class="active">
+            <i class="fa-solid fa-droplet"></i> Request
+        </a>
+
+        <a href="donor.html">
+            <i class="fa-solid fa-hand-holding-heart"></i> Donor
+        </a>
+
+        <a href="hospital.html">
+            <i class="fa-solid fa-hospital"></i> Hospitals
+        </a>
+
+        <a href="dashboard.html">
+            <i class="fa-solid fa-chart-line"></i> Dashboard
+        </a>
+
+        <a href="contact.html">
+            <i class="fa-solid fa-phone"></i> Contact
+        </a>
+
+    </nav>
+
+</header>
+
+<section class="request">
+
+    <div class="request-card">
+
+        <div class="request-header">
+
+            <i class="fa-solid fa-truck-medical request-icon"></i>
+
+            <h1>Emergency Blood Request</h1>
+
+            <p>
+                Fill in the patient's details carefully. Your request will
+                help nearby donors respond quickly during emergencies.
+            </p>
+
+        </div>
+
+        <form id="requestForm">
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input
+                    type="text"
+                    id="patientName"
+                    placeholder="Patient Name"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-calendar"></i>
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Patient Age"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <select id="bloodGroup" required>
+
+                    <option value="">Select Blood Group</option>
+
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>Bombay phenotype (hh)</option>
+                    <option>Rh-null ("Golden Blood")</option>
+
+                </select>
+
+            </div>
+             <div class="input-box">
+
+                 <i class="fa-solid fa-triangle-exclamation"></i>
+
+                 <select id="emergencyLevel" required>
+
+                    <option value="">🚨 Select Emergency Level</option>
+
+                    <option value="Critical">🔴 Critical</option>
+
+                    <option value="Urgent">🟠 Urgent</option>
+
+                    <option value="Normal">🟢 Normal</option>
+
+                 </select>
+
+             </div>
+            
+            <div class="input-box">
+
+                <i class="fa-solid fa-hospital"></i>
+
+                <input
+                    type="text"
+                    id="hospital"
+                    placeholder="Hospital Name"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="City / District"
+                    required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input
+                    type="tel"
+                    id="mobileNo"
+                    placeholder="Mobile Number"
+                    required>
+
+            </div>
+
+            <div class="input-box textarea-box">
+
+                <i class="fa-solid fa-notes-medical"></i>
+
+                <textarea
+                    id="details"
+                    placeholder="Describe the emergency..."></textarea>
+
+            </div>
+
+            <button type="submit" class="submit-btn">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Submit Blood Request
+
+            </button>
+
+        </form>
+
+        <div class="request-info">
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3>Quick Response</h3>
+
+                <p>
+                    Nearby donors can respond immediately after your
+                    request is received.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <h3>Secure Details</h3>
+
+                <p>
+                    Your information is securely handled through
+                    LifeLink SBES.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="next-btn">
+
+            <button
+                type="button"
+                onclick="window.location.href='donor.html'">
+
+                Become a Donor
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+
+        © 2026 LifeLink - Smart Blood Emergency System
+
+    </p>
+
+</footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

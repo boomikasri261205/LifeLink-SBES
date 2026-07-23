@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Become a Donor | LifeLink SBES</title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🩸 LifeLink
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="request.html">Request</a>
+<a href="donor.html">Donor</a>
+<a href="hospital.html">Hospitals</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="donor-section">
+
+<div class="donor-card">
+
+<h1><i class="fa-solid fa-heart-circle-plus"></i> Become a Blood Donor</h1>
+
+<p>
+Join our donor network and help save lives during emergencies.
+</p>
+
+<form id="donorForm">
+
+<div class="input-box">
+<i class="fa-solid fa-user"></i>
+<input type="text" id="donorName" placeholder="Full Name" required>
+</div>
+
+<div class="input-box">
+<i class="fa-solid fa-calendar"></i>
+<input type="number" id="donorAge" placeholder="Age" required>
+</div>
+
+<div class="input-box">
+<i class="fa-solid fa-droplet"></i>
+
+<select id="donorBloodGroup" required>
+
+<option>Select Blood Group</option>
+
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+
+</select>
+
+</div>
+
+<div class="input-box">
+<i class="fa-solid fa-weight-scale"></i>
+<input type="number" id="donorWeight" placeholder="Weight (kg)" required>
+</div>
+
+<div class="input-box">
+<i class="fa-solid fa-phone"></i>
+<input type="tel" id="donorMobile" placeholder="Mobile Number" required>
+</div>
+
+<div class="input-box">
+<i class="fa-solid fa-envelope"></i>
+<input type="email" id="donorEmail" placeholder="Email Address">
+</div>
+
+<div class="input-box">
+<i class="fa-solid fa-location-dot"></i>
+<input type="text"id="donorCity" placeholder="City"required>
+</div>
+
+<div class="input-box">
+<i class="fa-solid fa-calendar-check"></i>
+<input type="date"id="lastDonation">
+</div>
+
+<button class="register-btn">
+
+<i class="fa-solid fa-hand-holding-heart"></i>
+
+Register as Donor
+
+</button>
+
+</form>
+
+<div class="next-btn">
+
+<button onclick="window.location.href='hospital.html'">
+
+Next →
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 LifeLink - Smart Blood Emergency System
+
+</p>
+
+</footer>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

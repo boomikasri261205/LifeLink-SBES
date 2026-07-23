@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | LifeLink SBES</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-droplet"></i>
+
+LifeLink
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="request.html">Request</a>
+<a href="donor.html">Donor</a>
+<a href="hospital.html">Hospital</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="contact.html" class="active">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="contact">
+
+<h1>📞 Contact LifeLink</h1>
+
+<p>
+
+We are available 24×7 to help during blood emergencies.
+
+</p>
+
+<div class="emergency-grid">
+
+<div class="emergency-card">
+
+<i class="fa-solid fa-truck-medical"></i>
+
+<h3>Ambulance</h3>
+
+<p>108</p>
+
+<a href="tel:108">
+    <button>Call Now</button>
+</a>
+
+</div>
+
+<div class="emergency-card">
+
+<i class="fa-solid fa-building"></i>
+
+<h3>Blood Bank</h3>
+
+<p>Support</p>
+
+<a href="hospital.html">
+    <button>View</button>
+</a>
+
+</div>
+
+<div class="emergency-card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>LifeLink Help</h3>
+
+<p>24×7 Support</p>
+
+<a href="#contactForm">
+    <button>Contact</button>
+</a>
+
+</div>
+
+</div>
+
+<h2 class="contact-title">
+
+Send Us a Message
+
+</h2>
+
+<div class="contact-form">
+
+<form id="contactForm">
+
+<input type="text"
+id="contactName"
+placeholder="Full Name"
+required>
+
+<input type="email"
+id="contactEmail"
+placeholder="Email Address"
+required>
+
+<input type="tel"
+id="contactMobile"
+placeholder="Phone Number"
+required>
+
+<input type="text"
+id="contactSubject"
+placeholder="Subject"
+required>
+
+<textarea
+id="contactMessage"
+rows="6"
+placeholder="Type your message..."
+required></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+<!-- CONTACT PART 2 START HERE -->
+ <!-- Office Information -->
+
+<h2 class="contact-title">
+<i class="fa-solid fa-building"></i>
+Our Office
+</h2>
+
+<div class="office-grid">
+
+<div class="office-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Office Address</h3>
+
+<p>
+LifeLink SBES<br>
+Tiruchirappalli,<br>
+Tamil Nadu, India
+</p>
+
+</div>
+
+<div class="office-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>Email</h3>
+
+<p>
+<a href="mailto:support@lifelink.com">
+support@lifelink.com
+</a>
+</p>
+
+</div>
+
+<div class="office-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>Support</h3>
+
+<p>
+24 × 7 Emergency Assistance
+</p>
+
+</div>
+
+</div>
+
+<!-- Google Map -->
+
+<h2 class="contact-title">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+Location
+
+</h2>
+
+<div class="map-box">
+
+<i class="fa-solid fa-map-location-dot map-icon"></i>
+
+<h3>Google Maps</h3>
+
+<p>
+
+Current Location & Nearby Hospitals
+
+will appear here.
+
+</p>
+
+<a href="https://maps.google.com" target="_blank">
+
+<button>
+
+Open Maps
+
+</button>
+
+</a>
+
+</div>
+
+<!-- Social Media -->
+
+<h2 class="contact-title">
+
+Follow Us
+
+</h2>
+
+<div class="social-icons">
+
+<a href="#">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/boomikasri-m-837a65324/" target="_blank">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+<a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-x-twitter"></i>
+
+</a>
+
+</div>
+
+<!-- FAQ -->
+
+<h2 class="contact-title">
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="faq-box">
+
+<div class="faq-item">
+
+<h3 onclick="toggleFAQ(this)">
+🩸 How can I request blood?
+</h3>
+
+<p style="display:none;">
+
+Go to the Request Blood page and fill out the emergency request form.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3 onclick="toggleFAQ(this)">
+❤️ How can I become a donor?
+</h3>
+
+<p style="display:none;">
+
+Complete the donor registration form with your blood group and contact details.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3 onclick="toggleFAQ(this)">
+    🏥 How do I find nearby hospitals?
+</h3>
+
+<p style="display:none;">
+
+Use "My Current Location" or select your district.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="contact-footer">
+
+<h2>
+
+LifeLink SBES
+
+</h2>
+
+<p>
+
+Saving Lives Through Technology ❤️
+
+</p>
+
+<button onclick="window.location.href='index.html'">
+
+Back to Home
+
+</button>
+
+</section>
+<footer>
+
+<p>
+
+© 2026 LifeLink - Smart Blood Emergency System
+
+</p>
+
+</footer>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

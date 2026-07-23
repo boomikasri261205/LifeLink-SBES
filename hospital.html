@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hospitals | LifeLink SBES</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-droplet"></i> LifeLink
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="request.html">Request</a>
+<a href="donor.html">Donor</a>
+<a href="hospital.html" class="active">Hospitals</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hospital-page">
+
+<h1>🏥 Find Nearby Hospitals</h1>
+
+<p class="sub">
+Locate hospitals and blood banks instantly during emergencies.
+</p>
+
+<div class="location-box">
+
+<button class="location-btn" id="locationBtn">
+
+<i class="fa-solid fa-location-crosshairs"></i>
+
+Use My Current Location
+
+</button>
+
+</div>
+<div class="nearby-btn">
+
+    <button id="nearbyHospitalBtn">
+
+        🏥 Search Nearby Hospitals
+
+    </button>
+
+</div>
+
+<div id="locationResult"></div>
+
+<h3>OR</h3>
+
+<div class="district-box">
+
+<select id="districtSelect">
+
+<option>Select Your District</option>
+
+<option>Ariyalur</option>
+<option>Chengalpattu</option>
+<option>Chennai</option>
+<option>Coimbatore</option>
+<option>Cuddalore</option>
+<option>Dharmapuri</option>
+<option>Dindigul</option>
+<option>Erode</option>
+<option>Kallakurichi</option>
+<option>Kanchipuram</option>
+<option>Kanniyakumari</option>
+<option>Karur</option>
+<option>Krishnagiri</option>
+<option>Madurai</option>
+<option>Mayiladuthurai</option>
+<option>Nagapattinam</option>
+<option>Namakkal</option>
+<option>Nilgiris</option>
+<option>Perambalur</option>
+<option>Pudukottai</option>
+<option>Ramanathapuram</option>
+<option>Ranipet</option>
+<option>Salem</option>
+<option>Sivagangai</option>
+<option>Tenkasi</option>
+<option>Thanjavur</option>
+<option>Theni</option>
+<option>Thoothukudi</option>
+<option>Tiruchirappalli</option>
+<option>Tirunelveli</option>
+<option>Tirupattur</option>
+<option>Tiruppur</option>
+<option>Tiruvallur</option>
+<option>Tiruvannamalai</option>
+<option>Tiruvarur</option>
+<option>Vellore</option>
+<option>Viluppuram</option>
+<option>Virudhunagar</option>
+
+</select>
+
+<button class="search-btn" id="searchHospitalBtn">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search
+
+</button>
+
+</div>
+
+<div class="result-box">
+
+<h2>📍 Nearby Hospitals</h2>
+<div id="hospitalResults">
+
+<p>
+Nearby hospitals will appear here after selecting your location or district.
+</p>
+</div>
+
+</div>
+
+<div class="next-btn">
+    <button onclick="window.location.href='dashboard.html'">
+        Next →
+    </button>
+</div>
+</section>
+
+<footer>
+
+© 2026 LifeLink | Smart Blood Emergency System
+
+</footer>
+<!-- Firebase Library -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- Firebase Config -->
+<script src="firebase.js"></script>
+
+<!-- Main JS -->
+<script src="script.js"></script>
+</body>
+</html>

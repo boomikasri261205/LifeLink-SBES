@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | LifeLink SBES</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2><i class="fa-solid fa-droplet"></i> LifeLink</h2>
+
+        <ul>
+
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+
+            <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+
+            <li><a href="request.html"><i class="fa-solid fa-hand-holding-droplet"></i> Request</a></li>
+
+            <li><a href="donor.html"><i class="fa-solid fa-heart"></i> Donor</a></li>
+
+            <li><a href="hospital.html"><i class="fa-solid fa-hospital"></i> Hospital</a></li>
+
+            <li class="active"><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+
+            <li><a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <!-- Header -->
+
+        <div class="top-header">
+
+            <h1>Dashboard</h1>
+
+            <div class="top-icons">
+
+                <i class="fa-solid fa-bell"></i>
+
+                <i class="fa-solid fa-user-circle"></i>
+
+            </div>
+
+        </div>
+
+        <!-- Welcome -->
+
+        <div class="welcome-box">
+
+            <h2>Welcome to LifeLink SBES</h2>
+
+            <p>
+                Monitor blood requests, donor registrations and emergency services in one place.
+            </p>
+
+            <p id="currentDateTime"></p>
+
+        </div>
+
+        <!-- Live Statistics -->
+
+        <h2 class="section-title">
+
+            <i class="fa-solid fa-chart-simple"></i>
+
+            Live Statistics
+
+        </h2>
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-user-group"></i>
+
+                <h3>Registered Donors</h3>
+
+                <h1 id="donorCount">--</h1>
+
+                <p>Waiting for Database</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h3>Blood Requests</h3>
+
+                <h1 id="requestCount">--</h1>
+
+                <p>Loading...</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-hospital"></i>
+
+                <h3>Hospitals Connected</h3>
+
+                <h1>15+</h1>
+
+                <p>Available</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-heart-circle-check"></i>
+
+                <h3>Lives Saved</h3>
+
+                <h1>0</h1>
+
+                <p>Updating...</p>
+
+            </div>
+
+        </div>
+
+        <!-- Blood Groups -->
+
+        <h2 class="section-title">
+
+            🩸 Common Blood Groups
+
+        </h2>
+
+        <div class="blood-grid">
+
+            <div class="blood-card">A+</div>
+            <div class="blood-card">A-</div>
+            <div class="blood-card">B+</div>
+            <div class="blood-card">B-</div>
+            <div class="blood-card">AB+</div>
+            <div class="blood-card">AB-</div>
+            <div class="blood-card">O+</div>
+            <div class="blood-card">O-</div>
+
+        </div>
+
+        <!-- Rare Blood Groups -->
+
+        <h2 class="section-title">
+
+            ⭐ Rare Blood Groups
+
+        </h2>
+
+        <div class="rare-grid">
+
+            <div class="rare-card">
+
+                <h3>Bombay Phenotype (hh)</h3>
+
+                <p>Very Rare Blood Group</p>
+
+                <button>Request Rare Blood</button>
+
+            </div>
+
+            <div class="rare-card">
+
+                <h3>Rh-null (Golden Blood)</h3>
+
+                <p>World's Rarest Blood Group</p>
+
+                <button>Request Rare Blood</button>
+
+            </div>
+
+        </div>
+                <!-- Quick Actions -->
+
+        <h2 class="section-title">
+            ⚡ Quick Actions
+        </h2>
+
+        <div class="quick-grid">
+
+            <a href="request.html" class="quick-card">
+                <i class="fa-solid fa-droplet"></i>
+                <h3>Request Blood</h3>
+            </a>
+
+            <a href="donor.html" class="quick-card">
+                <i class="fa-solid fa-user-plus"></i>
+                <h3>Become Donor</h3>
+            </a>
+
+            <a href="hospital.html" class="quick-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Find Hospital</h3>
+            </a>
+
+            <a href="#" class="quick-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Emergency Call</h3>
+            </a>
+
+            <a href="#" class="quick-card">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h3>Current Location</h3>
+            </a>
+
+            <a href="#" class="quick-card">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h3>Find Ambulance</h3>
+            </a>
+
+        </div>
+
+        <!-- Emergency Alerts -->
+
+        <h2 class="section-title">
+            🚨 Emergency Alerts
+        </h2>
+
+        <div id="emergencyAlertContainer" class="alert-box">
+
+            <h3>No Active Emergency Alerts</h3>
+
+            <p>
+                Emergency notifications will appear here.
+            </p>
+
+        </div>
+        <h2 class="section-title">
+            ❤️ Matching Donors
+        </h2>
+
+        <div id="matchingDonors">
+
+             <p>No Matching Donors Found.</p>
+
+        </div>
+
+        <!-- Recent Blood Requests -->
+
+        <h2 class="section-title">
+            📋 Recent Blood Requests
+        </h2>
+
+        <div class="table-box">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Patient</th>
+
+                        <th>Blood Group</th>
+
+                        <th>City</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="recentRequests">
+
+                    <tr>
+
+                        <td colspan="3">
+
+                            Loading...
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- Nearby Hospitals -->
+
+        <h2 class="section-title">
+            🏥 Nearby Hospitals
+        </h2>
+
+        <div class="hospital-status">
+
+            <i class="fa-solid fa-location-crosshairs"></i>
+
+            <h3>Waiting for Current Location</h3>
+
+            <p>
+
+                Click "Current Location" to find nearby hospitals.
+
+            </p>
+
+        </div>
+
+        <!-- System Status -->
+
+        <h2 class="section-title">
+            🖥 System Status
+        </h2>
+
+        <div class="system-grid">
+
+            <div class="system-card">
+                🟢 Website Online
+            </div>
+
+            <div class="system-card">
+                🟢 Firebase Connected
+            </div>
+
+            <div class="system-card">
+                🟢 Emergency Support Active
+            </div>
+
+            <div class="system-card">
+                🟡 Location Not Enabled
+            </div>
+
+        </div>
+
+        <div class="next-btn">
+
+            <button onclick="window.location.href='contact.html'">
+
+                Next →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+
+        © 2026 LifeLink - Smart Blood Emergency System
+
+    </p>
+
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-messaging-compat.js"></script>
+
+<script src="firebase.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
