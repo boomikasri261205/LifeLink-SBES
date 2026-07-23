@@ -154,6 +154,15 @@ const hospitals = [
     status: "Available",
     phone: ""
   },
+  {
+  district: "Chennai",
+  city: "Chennai",
+  hospitalName: "Government Omandurar Multi Super Speciality Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
   {
     district: "Chennai",
@@ -381,6 +390,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Cuddalore",
+  city: "Chidambaram",
+  hospitalName: "Government Medical College Hospital, Chidambaram",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Cuddalore",
@@ -488,6 +506,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Dindigul",
+  city: "Dindigul",
+  hospitalName: "Dindigul Government Medical College Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Dindigul",
@@ -537,6 +564,15 @@ const hospitals = [
   district: "Erode",
   city: "Erode",
   hospitalName: "Government Headquarters Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Erode",
+  city: "Perundurai",
+  hospitalName: "Government Erode Medical College Hospital",
   type: "Government",
   nabh: "No",
   status: "Available",
@@ -646,6 +682,15 @@ const hospitals = [
   hospitalName: "Government Headquarters Hospital, Kanchipuram",
   type: "Government",
   nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Kanchipuram",
+  city: "Melmaruvathur",
+  hospitalName: "Adhiparasakthi Hospital and Research Institute",
+  type: "Private",
+  nabh: "Yes",
   status: "Available",
   phone: ""
 },
@@ -766,6 +811,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Karur",
+  city: "Karur",
+  hospitalName: "Sugam Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Karur",
@@ -874,6 +928,24 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Madurai",
+  city: "Madurai",
+  hospitalName: "Aravind Eye Hospital",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Madurai",
+  city: "Madurai",
+  hospitalName: "Preethi Hospital",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Madurai",
@@ -937,6 +1009,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Mayiladuthurai",
+  city: "Mayiladuthurai",
+  hospitalName: "A.V.C. Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Mayiladuthurai",
@@ -976,6 +1057,15 @@ const hospitals = [
   district: "Nagapattinam",
   city: "Nagapattinam",
   hospitalName: "Government District Headquarters Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Nagapattinam",
+  city: "Nagapattinam",
+  hospitalName: "Government Medical College Hospital, Nagapattinam",
   type: "Government",
   nabh: "No",
   status: "Available",
@@ -1030,6 +1120,15 @@ const hospitals = [
   district: "Namakkal",
   city: "Namakkal",
   hospitalName: "Government Headquarters Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Namakkal",
+  city: "Namakkal",
+  hospitalName: "Government Medical College Hospital, Namakkal",
   type: "Government",
   nabh: "No",
   status: "Available",
@@ -1152,6 +1251,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Perambalur",
+  city: "Perambalur",
+  hospitalName: "Mother Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Perambalur",
@@ -1187,6 +1295,15 @@ const hospitals = [
   phone: ""
 },
 
+{
+  district: "Pudukkottai",
+  city: "Pudukkottai",
+  hospitalName: "Muthu Meenakshi Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 {
   district: "Pudukkottai",
   city: "Pudukkottai",
@@ -1273,6 +1390,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Ranipet",
+  city: "Ranipet",
+  hospitalName: "Government District Headquarters Hospital, Ranipet",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Ranipet",
@@ -1337,6 +1463,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Salem",
+  city: "Salem",
+  hospitalName: "Sri Gokulam Hospital",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Salem",
@@ -1390,6 +1525,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Sivagangai",
+  city: "Karaikudi",
+  hospitalName: "Sri Parvathi Surgical Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Sivagangai",
@@ -1434,6 +1578,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Tenkasi",
+  city: "Tenkasi",
+  hospitalName: "Surandai Multispeciality Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Tenkasi",
@@ -1468,6 +1621,24 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Thanjavur",
+  city: "Thanjavur",
+  hospitalName: "Govt. Raja Mirasudhar Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Thanjavur",
+  city: "Kumbakonam",
+  hospitalName: "Government Head Quarters Hospital, Kumbakonam",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Thanjavur",
@@ -1475,6 +1646,24 @@ const hospitals = [
   hospitalName: "Meenakshi Hospital",
   type: "Private",
   nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Thanjavur",
+  city: "Thanjavur",
+  hospitalName: "Vinodhagan Memorial Hospital",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Thanjavur",
+  city: "Thanjavur",
+  hospitalName: "Sudar Hospital",
+  type: "Private",
+  nabh: "No",
   status: "Available",
   phone: ""
 },
@@ -1506,6 +1695,15 @@ const hospitals = [
   district: "Theni",
   city: "Theni",
   hospitalName: "Government Medical College Hospital, Theni",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Theni",
+  city: "Theni",
+  hospitalName: "Government Headquarters Hospital, Theni",
   type: "Government",
   nabh: "No",
   status: "Available",
@@ -1550,6 +1748,15 @@ const hospitals = [
   district: "Thoothukudi",
   city: "Thoothukudi",
   hospitalName: "Government Medical College Hospital, Thoothukudi",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Thoothukudi",
+  city: "Thoothukudi",
+  hospitalName: "Government Headquarters Hospital, Thoothukudi",
   type: "Government",
   nabh: "No",
   status: "Available",
@@ -1609,11 +1816,19 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
-
 {
   district: "Tiruchirappalli",
   city: "Tiruchirappalli",
   hospitalName: "Kauvery Hospital",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Tiruchirappalli",
+  city: "Tiruchirappalli",
+  hospitalName: "GVN Hospital",
   type: "Private",
   nabh: "Yes",
   status: "Available",
@@ -1639,6 +1854,45 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Tiruchirappalli",
+  city: "Tiruchirappalli",
+  hospitalName: "Deepam Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+
+{
+  district: "Tiruchirappalli",
+  city: "Tiruchirappalli",
+  hospitalName: "Child Jesus Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+
+{
+  district: "Tiruchirappalli",
+  city: "Tiruchirappalli",
+  hospitalName: "Cethar Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+
+{
+  district: "Tiruchirappalli",
+  city: "Tiruchirappalli",
+  hospitalName: "Srinivasa Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 // =====================================================
 // TIRUNELVELI
 // =====================================================
@@ -1652,11 +1906,29 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Tirunelveli",
+  city: "Palayamkottai",
+  hospitalName: "Government Headquarters Hospital, Palayamkottai",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Tirunelveli",
   city: "Palayamkottai",
   hospitalName: "CSI Jeyaraj Annapackiam Mission Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Tirunelveli",
+  city: "Tirunelveli",
+  hospitalName: "Annai Velankanni Hospital",
   type: "Private",
   nabh: "No",
   status: "Available",
@@ -1691,6 +1963,15 @@ const hospitals = [
   district: "Tirupathur",
   city: "Tirupathur",
   hospitalName: "Government Hospital, Tirupathur",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Tirupathur",
+  city: "Tirupathur",
+  hospitalName: "Government District Headquarters Hospital, Tirupathur",
   type: "Government",
   nabh: "No",
   status: "Available",
@@ -1740,6 +2021,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Tiruppur",
+  city: "Tiruppur",
+  hospitalName: "Government Medical College Hospital, Tiruppur",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Tiruppur",
@@ -1770,6 +2060,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Tiruppur",
+  city: "Tiruppur",
+  hospitalName: "Aravind Eye Hospital",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
 // =====================================================
 // TIRUVALLUR
 // =====================================================
@@ -1778,6 +2077,15 @@ const hospitals = [
   district: "Tiruvallur",
   city: "Tiruvallur",
   hospitalName: "District Head Quarter Government Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Tiruvallur",
+  city: "Tiruvallur",
+  hospitalName: "Government Medical College Hospital, Tiruvallur",
   type: "Government",
   nabh: "No",
   status: "Available",
@@ -1867,6 +2175,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Tiruvannamalai",
+  city: "Tiruvannamalai",
+  hospitalName: "Arunai Medical College Hospital",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
 
 // =====================================================
 // TIRUVARUR
@@ -1911,6 +2228,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Tiruvarur",
+  city: "Thiruvarur",
+  hospitalName: "A.G. Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 // =====================================================
 // VELLORE
 // =====================================================
@@ -1924,11 +2250,29 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Vellore",
+  city: "Vellore",
+  hospitalName: "Government Vellore Medical College Hospital",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Vellore",
   city: "Vellore",
   hospitalName: "Christian Medical College (CMC) Vellore",
+  type: "Private",
+  nabh: "Yes",
+  status: "Available",
+  phone: ""
+},
+{
+  district: "Vellore",
+  city: "Vellore",
+  hospitalName: "Apollo KH Hospital",
   type: "Private",
   nabh: "Yes",
   status: "Available",
@@ -1988,6 +2332,15 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Viluppuram",
+  city: "Viluppuram",
+  hospitalName: "Westminster Hospital",
+  type: "Private",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Viluppuram",
@@ -2012,12 +2365,41 @@ const hospitals = [
   status: "Available",
   phone: ""
 },
+{
+  district: "Virudhunagar",
+  city: "Sivakasi",
+  hospitalName: "Government Hospital, Sivakasi",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+
+{
+  district: "Virudhunagar",
+  city: "Rajapalayam",
+  hospitalName: "Government Hospital, Rajapalayam",
+  type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
 
 {
   district: "Virudhunagar",
   city: "Virudhunagar",
   hospitalName: "Government Hospital, Aruppukottai",
   type: "Government",
+  nabh: "No",
+  status: "Available",
+  phone: ""
+},
+
+{
+  district: "Virudhunagar",
+  city: "Sivakasi",
+  hospitalName: "Sivakasi Lions Hospital",
+  type: "Private",
   nabh: "No",
   status: "Available",
   phone: ""
