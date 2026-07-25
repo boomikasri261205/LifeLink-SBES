@@ -546,16 +546,26 @@ function getCurrentLocation() {
         },
 
         (error) => {
-
-            alert("Location access denied or unavailable.");
-            console.error(error);
-
-        },
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            alert("Error 1: Permission Denied");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            alert("Error 2: Position Unavailable");
+            break;
+        case error.TIMEOUT:
+            alert("Error 3: Request Timed Out");
+            break;
+        default:
+            alert("Unknown Error");
+    }
+    console.error(error);
+},
 
         {
-            enableHighAccuracy: true,
-            timeout: 10000,
-            maximumAge: 0
+            enableHighAccuracy: false,
+            timeout: 20000,
+            maximumAge: 60000
         }
 
     );
