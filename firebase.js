@@ -1,5 +1,5 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBrn1vH0CcPbCHvmg9MyoqOl7jTNOmANTg",
+  apiKey: "AIzaSyDZTh_UDjv4TGUnWkDBb3JgLOg3uO5pH6k",
   authDomain: "life-link-sebs.firebaseapp.com",
   projectId: "life-link-sebs",
   storageBucket: "life-link-sebs.firebasestorage.app",
