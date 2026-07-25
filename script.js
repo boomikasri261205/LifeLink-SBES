@@ -581,24 +581,25 @@ function searchNearbyHospitals() {
             );
 
         },
-
         (error) => {
 
-            alert("Location access denied or unavailable.");
+            alert("Error Code: " + error.code + "\n" + error.message);
             console.error(error);
 
         },
 
+        
         {
-            enableHighAccuracy: true,
-            timeout: 10000,
-            maximumAge: 0
+            enableHighAccuracy: false,
+            timeout: 15000,
+            maximumAge: 60000
         }
 
-    );
-}
+     );
 
-if (locationBtn) {
+}
+      
+    if (locationBtn) {
     locationBtn.addEventListener("click", getCurrentLocation);
 }
 
