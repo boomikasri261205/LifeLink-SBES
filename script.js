@@ -230,7 +230,6 @@ snapshot.docChanges().forEach((change) => {
 // =========================
 
 if (matchingDonors) {
-
     db.collection("bloodRequests")
     .orderBy("createdAt", "desc")
     .limit(1)
@@ -518,6 +517,95 @@ if (searchHospitalBtn) {
     });
 
 }
+// =========================
+// Current Location & Nearby Hospitals
+// =========================
+
+const locationBtn = document.getElementById("locationBtn");
+const nearbyHospitalBtn = document.getElementById("nearbyHospitalBtn");
+
+function getCurrentLocation() {
+
+    if (!navigator.geolocation) {
+        alert("Geolocation is not supported by this browser.");
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+
+        (position) => {
+
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+
+            window.open(
+                `https://www.google.com/maps?q=${lat},${lon}`,
+                "_blank"
+            );
+
+        },
+
+        (error) => {
+
+            alert("Location access denied or unavailable.");
+            console.error(error);
+
+        },
+
+        {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 0
+        }
+
+    );
+}
+
+function searchNearbyHospitals() {
+
+    if (!navigator.geolocation) {
+        alert("Geolocation is not supported by this browser.");
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+
+        (position) => {
+
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+
+            window.open(
+                `https://www.google.com/maps/search/hospitals/@${lat},${lon},14z`,
+                "_blank"
+            );
+
+        },
+
+        (error) => {
+
+            alert("Location access denied or unavailable.");
+            console.error(error);
+
+        },
+
+        {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 0
+        }
+
+    );
+}
+
+if (locationBtn) {
+    locationBtn.addEventListener("click", getCurrentLocation);
+}
+
+if (nearbyHospitalBtn) {
+    nearbyHospitalBtn.addEventListener("click", searchNearbyHospitals);
+}
+
 // =========================
 // Blood Request + Firebase
 // =========================
