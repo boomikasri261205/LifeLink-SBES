@@ -583,10 +583,25 @@ function searchNearbyHospitals() {
         },
         (error) => {
 
-            alert("Error Code: " + error.code + "\n" + error.message);
-            console.error(error);
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            alert("Error 1: Permission Denied");
+            break;
 
-        },
+        case error.POSITION_UNAVAILABLE:
+            alert("Error 2: Position Unavailable");
+            break;
+
+        case error.TIMEOUT:
+            alert("Error 3: Request Timed Out");
+            break;
+
+        default:
+            alert("Unknown Error");
+    }
+
+    console.error(error);
+},
 
         
         {
