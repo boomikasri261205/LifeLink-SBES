@@ -18,6 +18,8 @@ if (donorForm) {
         const email = document.getElementById("donorEmail").value.trim();
         const city = document.getElementById("donorCity").value.trim();
         const lastDonation = document.getElementById("lastDonation").value;
+        const aadhaarNumber = document.getElementById("donorAadhaar").value.trim();
+        const proofFile = document.getElementById("donorProof").files[0];
 
         // Validation
 
@@ -50,6 +52,15 @@ if (donorForm) {
             alert("Please enter a valid email address.");
             return;
         }
+        // Aadhaar Validation (Optional)
+
+         if (aadhaarNumber !== "" && !/^[0-9]{12}$/.test(aadhaarNumber)) {
+
+            alert("Please enter a valid 12-digit Aadhaar number.");
+
+            return;
+
+        }
         try{
 
             await db.collection("donors").add({
@@ -62,6 +73,15 @@ if (donorForm) {
                   donorEmail: email,
                   donorCity: city,
                   lastDonation: lastDonation,
+
+                  donorAadhaar: aadhaarNumber,
+
+                  proofFileName: proofFile ? proofFile.name : "",
+
+                  verificationStatus: "Pending",
+
+                  verified: false,
+
                   createdAt: new Date()
 
             });
